@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool parallax gallery</title>
+    <!-- Locomotive-scroll CSS -->
+    <link rel="stylesheet" href="Assets/Libs/locomotive-scroll.min.css" />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <main data-scroll-container>
+        <h1 class="title" data-scroll-section>A parallax gallery</h1>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__el"><a href="#" class="nav__link">Présentation</a></li>
+                <li class="nav__el"><a href="#" class="nav__link nav__link--active">Gallery</a></li>
+                <li class="nav__el"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="gallery" data-scroll-section>
+            <li class="gallery__el gallery__el--yellow" data-scroll data-scroll-speed="1"><img src="Assets/Images/yellow.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__el gallery__el--green" data-scroll data-scroll-speed="-5"><img src="Assets/Images/green.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__el gallery__el--red" data-scroll data-scroll-speed="-7"><img src="Assets/Images/red.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__el gallery__el--white" data-scroll data-scroll-speed="2" data-scroll-direction="horizontal"><img src="Assets/Images/white.jpg" alt="" class="gallery__img"></li>
+            <li class="gallery__el gallery__el--blue" data-scroll data-scroll-speed="-7"><img src="Assets/Images/blue.jpg" alt="" class="gallery__img"></li>
+        </ul>
+    </main>
+    
+    <!-- Locomotive JS -->
+    <script src="Assets/Libs/locomotive-scroll.min.js"></script>
+    <!-- My JS -->
+    <script async src="script.js"></script>
+</body>
+</html>
